@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Bold.ttf">
+            <string>OpenSans-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PlaceholderView" customModule="News" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="Bfa-tH-iNl" id="aVV-mj-TsQ"/>
+                <outlet property="descriptionLabel" destination="nfb-4x-Yj9" id="vDC-lt-EVZ"/>
+                <outlet property="imageView" destination="Lxz-ax-rC5" id="BAW-wP-aAB"/>
+                <outlet property="titleLabel" destination="t3a-jq-Z2Q" id="tvM-EQ-hLg"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Bfa-tH-iNl">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="HMV-QE-mbs">
+                    <rect key="frame" x="20" y="339.5" width="374" height="207"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emptyList" translatesAutoresizingMaskIntoConstraints="NO" id="Lxz-ax-rC5">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="128"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="128" id="gmS-gS-SeE"/>
+                            </constraints>
+                        </imageView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="8K8-Gh-1go">
+                            <rect key="frame" x="67" y="162" width="240" height="45"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Random user" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t3a-jq-Z2Q">
+                                    <rect key="frame" x="60" y="0.0" width="120.5" height="23.5"/>
+                                    <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.60000002384185791" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="You haven't had any random users yet" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nfb-4x-Yj9">
+                                    <rect key="frame" x="0.0" y="28.5" width="240" height="16.5"/>
+                                    <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="HMV-QE-mbs" firstAttribute="centerX" secondItem="Bfa-tH-iNl" secondAttribute="centerX" id="8BM-E0-84u"/>
+                <constraint firstItem="HMV-QE-mbs" firstAttribute="leading" secondItem="Bfa-tH-iNl" secondAttribute="leadingMargin" id="T0Y-7G-2xs"/>
+                <constraint firstAttribute="trailingMargin" secondItem="HMV-QE-mbs" secondAttribute="trailing" id="W3e-b4-sPy"/>
+                <constraint firstItem="HMV-QE-mbs" firstAttribute="centerY" secondItem="Bfa-tH-iNl" secondAttribute="centerY" constant="-5" id="dWr-XZ-53c"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="jmj-Kk-jWN"/>
+            <point key="canvasLocation" x="131.8840579710145" y="144.64285714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="emptyList" width="800" height="600"/>
+    </resources>
+</document>
